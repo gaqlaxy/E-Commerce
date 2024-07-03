@@ -6,19 +6,24 @@
 body{
     font-family: "Rubik" , sans-serif;
     /* width: 1400px; */
-    margin: 50px auto;
+    /* margin: 50px auto;    */
+    line-height: 1;
+    font-weight: 500;
 }
 
 /* Navigation  */
 
 nav {
     color: #333;
+    background-color: #fdf2e9;
 }
+
 .nav-bar{
     margin: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .nav-links{
     display: flex;
@@ -29,9 +34,14 @@ nav {
 }
 a:first-child {
     text-decoration: none;
-    background-color: rgba(73, 67, 49, 0.395);
+    /* background-color: rgba(73, 67, 49, 0.395); */
     padding: 10px;
-    border-radius: 9px;
+    color: #333;
+    /* border-radius: 9px; */
+}
+a:first-child:hover,
+a:first-child:link{
+    color: #F7B05B;
 }
 
 /* hero section  */
