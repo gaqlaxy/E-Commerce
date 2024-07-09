@@ -624,6 +624,10 @@ ul li:hover a::before{
 .cards p {
   font-size: 1.2rem;
 }
+.cards a{
+  text-decoration: none;
+  color: #333;
+}
 .para-products{
   display: inline-block;
 }
@@ -642,3 +646,4 @@ ul li:hover a::before{
   background-color: #fdf2e9;
 
 }
+
