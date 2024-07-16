@@ -23,3 +23,4 @@ tl.from(".gsap-nav", {
     duration: 0.3,
     stagger: 0.3
 })
+
