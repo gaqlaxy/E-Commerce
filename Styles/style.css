@@ -11,6 +11,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 120rem;
@@ -102,6 +103,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 9px;
     transition: all 0.3s ease-in-out;
 } */
+ 
 .logo {
   height: 2.4rem;
 }
@@ -759,3 +761,4 @@ ul li:hover a::before {
 .all-products .heading-secondary {
   margin-bottom: 5.2rem;
 }
+
