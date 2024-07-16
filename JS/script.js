@@ -24,3 +24,20 @@ tl.from(".gsap-nav", {
     stagger: 0.3
 })
 
+//Individual Products
+
+function changeImageRed(){
+    document.getElementById("image").src = "Banana-pith/Red.jpg";
+}
+function changeImagePink(){
+    document.getElementById("image").src = "Banana-pith/Pink.jpg";
+}
+function changeImageYellow(){
+    document.getElementById("image").src = "Banana-pith/Yellow.jpg";
+}
+function changeImageGreen(){
+    document.getElementById("image").src = "Banana-pith/Green.jpg";
+}
+function changeImageBlue(){
+    document.getElementById("image").src = "Banana-pith/Blue.jpg";
+}
