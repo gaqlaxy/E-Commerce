@@ -784,7 +784,7 @@ ul li:hover a::before {
   border-top: 1px solid #eee;
 }
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+  grid-template-columns: 1.5fr 1.5fr;
 }
 .footer-logo {
   display: block;
@@ -800,6 +800,7 @@ ul li:hover a::before {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  /* display: block; */
 }
 .contacts {
   font-style: normal;
@@ -815,9 +816,25 @@ ul li:hover a::before {
   font-size: 1.6rem;
   color: #767676;
   transition: all 0.3s;
+  /* display: block; */
 }
 
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  /* flex-direction: column; */
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
 }
