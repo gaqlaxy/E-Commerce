@@ -751,17 +751,21 @@ ul li:hover a::before {
 }
 .product-description li {
   list-style: none;
-  padding: 1rem;
-  border: 1px solid;
+  /* padding: 1rem; */
+  /* border: 1px solid; */
   cursor: pointer;
 }
 .select-colors {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .all-products .heading-secondary {
   margin-bottom: 5.2rem;
 }
 
+.selecting-colors{
+  width: 50px;
+  height: 50px;
+}
