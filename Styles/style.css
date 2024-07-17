@@ -298,6 +298,7 @@ ul li:hover a::before {
   width: 60%;
   transition: all 0.4s;
   grid-column: 1;
+  
 }
 .product-gallery-item img:hover {
   transform: scale(1.1);
@@ -758,7 +759,6 @@ ul li:hover a::before {
 .select-colors {
   display: flex;
   gap: 1rem;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -767,8 +767,8 @@ ul li:hover a::before {
 }
 
 .selecting-colors{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 .product-select-colors{
   display: flex;
