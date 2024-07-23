@@ -65,6 +65,8 @@ let obs = new IntersectionObserver(function(entries){
 })
 obs.observe(sectionHeroEl);
 
+
+
 // Getting current year 
 let year = document.querySelector(".year");
 let currentYear = new Date().getFullYear();
