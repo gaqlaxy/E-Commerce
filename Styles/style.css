@@ -279,12 +279,7 @@ ul li:hover a::before {
 .gallery-item {
   overflow: hidden;
 }
-/* .product-gallery{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.6rem;
-    padding: 1.6rem;
-  } */
+
 .product-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -299,9 +294,12 @@ ul li:hover a::before {
   width: 60%;
   transition: all 0.4s;
   grid-column: 1;
+  overflow: hidden;
 }
 .product-gallery-item img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  transform: translateY(-1.2rem);
+
 }
 .product-gallery-item {
   overflow: hidden;
