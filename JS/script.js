@@ -72,3 +72,20 @@ let year = document.querySelector(".year");
 let currentYear = new Date().getFullYear();
 console.log(currentYear)
 year.textContent = currentYear;
+
+
+// for testimonials
+let panels = document.querySelectorAll('.panel');
+
+panels.forEach((panel) => {
+    panel.addEventListener("click", () =>{
+        removeActiveClasses()
+        panel.classList.add("active");
+    })
+})
+
+function removeActiveClasses(){
+    panels.forEach((panel) => {
+        panel.classList.remove("active");
+    })
+}
