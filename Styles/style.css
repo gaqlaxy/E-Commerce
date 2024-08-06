@@ -334,6 +334,7 @@ align-items: center;
 .testimonials-item p{
   margin-top: 2rem;
   font-size: 1.6rem;
+  font-style: italic;
 }
 .section-testimonials .swiper-pagination{
   position: relative;
