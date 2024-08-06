@@ -355,6 +355,7 @@ align-items: center;
 
 .section-testimonials {
   background-color: #fdf2e9;
+  height: 100%;
   /* display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center; */
