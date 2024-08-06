@@ -306,14 +306,45 @@ ul li:hover a::before {
 /* ---------------------- */
 
 
+/* SWIPER TESTING  */
 
+.testimonials-item{
+  padding: 3rem;
+  border-radius: 30px;
+  background-color: #fff;
 
-
-
-
-
-
-
+}
+.testimonials-item .info{
+display: flex;
+align-items: center;
+}
+.testimonials-item img {
+  max-width: 80%;
+  border-radius: 50%;
+  margin-right: 2rem;
+  vertical-align: middle;
+}
+.testimonials-item .name{
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+.testimonials-item p{
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+.section-testimonials .swiper-pagination{
+  position: relative;
+  margin-top: 4rem;
+  bottom: auto;
+}
+.section-testimonials .swiper-pagination-bullet{
+  height: 12px;
+  width: 12px;
+  background-color: #333
+}
 
 
 
@@ -1038,3 +1069,6 @@ ul li:hover a::before {
 .sticky .herosection{
   margin-top: 9.6rem;
 }
+
+
+
