@@ -1,4 +1,4 @@
- @media (max-width: 84em) {
+ /* @media (max-width: 84em) { 
     .hero-container {
       max-width: 120rem;
     }
@@ -15,7 +15,6 @@
 
   @media (max-width: 75em) {
     html {
-      /* 9px / 16px  */
       font-size: 56.25%;
     }
   
@@ -52,7 +51,6 @@
 
   @media (max-width: 59em) {
     html {
-      /* 8px / 16px = 0.5 = 50% */
       font-size: 50%;
     }
   
@@ -88,7 +86,6 @@
     }
   
     .cta {
-      /* 3/5 = 60% + 2/5 = 40% */
       grid-template-columns: 3fr 2fr;
     }
   
@@ -98,5 +95,16 @@
   
     .btn--form {
       margin-top: 1.2rem;
+    }
+  }*/
+
+  /* No Issues till 1300px  */
+
+  @media (max-width: 984px){
+    .hero-container{
+      max-width: 98.4rem;
+    }
+    .hero-heading{
+      font-size: 3.9rem;
     }
   }
