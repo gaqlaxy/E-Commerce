@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"name": "Tusser Silk",
+		"price": "799",
+		"images": "./Images/9.png",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 2,
+		"name": "Cotton",
+		"price": "499",
+		"images": "./Images/7.png",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 3,
+		"name": "Banana Pith",
+		"price": "1399",
+		"images": "./Images/8.png",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 4,
+		"name": "Kanchipuram Silk",
+		"price": "999",
+		"images": "./Images/4.jpg",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 5,
+		"name": "Kanchipuram Silk",
+		"price": "999",
+		"images": "./Images/3.jpg",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 6,
+		"name": "Kanchipuram Silk",
+		"price": "999",
+		"images": "./Images/1.jpg",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	},
+	{
+		"id": 7,
+		"name": "Kanchipuram Silk",
+		"price": "999",
+		"images": "./Images/2.jpg",
+		"description": "Banana Pith Sarees blend the comfort of cotton with the luxurious sheen of silk."
+	}
+
+]

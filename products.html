@@ -1,307 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Products</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <!-- <link rel="stylesheet" href="fetch.css"> -->
+    <!-- <link rel="stylesheet" href="Styles/tooltip.css"> -->
+    <link
+      rel="shortcut icon"
+      href="Images/Nesavaruvi-Final-Transparent.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+  </head>
+  <style>
+    :root {
+      --def-transition-duration: 0.3s;
+    }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <title>Products</title>
-  <link rel="stylesheet" href="Styles/style.css">
-  <link rel="stylesheet" href="Styles/tooltip.css">
-  <link rel="shortcut icon" href="Images/Nesavaruvi-Final-Transparent.ico" type="image/x-icon">
-</head>
+    body {
+      background-color: #fdf2e9;
+    }
 
-<body>
-  <!-- Nav Bar -->
+    .container {
+      max-width: 120rem;
+      margin: 0 auto;
+      padding: 0 3.2rem;
+    }
 
-  <header class="header">
-    <a href=""><img src="Images/file.png" alt=""></a>
-    <nav class="main-nav">
-      <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="index.html">Home</a></li>
-        <li><a class="main-nav-link" href="../index.html#aboutus">About</a></li>
-        <li><a class="main-nav-link" href="../index.html#contactus">Contact</a></li>
-        <li><a class="main-nav-link nav-libtn" href="products.html">Products</a></li>
-      </ul>
-    </nav>
-  </header>
+    h2,
+    h3,
+    .price {
+      font-family: "Playfair Display", serif;
+      margin: 0;
+    }
 
+    h3 {
+      font-size: 3.1875rem;
+      font-weight: 400;
+      line-height: 120%;
+    }
 
-  <section class="all-products">
-    <div class="container center-text">
-      <!-- <span class="subheading">Your shortcut to sophistication. Our best sellers never go out of style</span> -->
-      <h2 class="heading-secondary">
-        Our Products
-      </h2>
-    </div>
+    .products-heading-secondary {
+      font-weight: 700;
+      color: #333;
+      letter-spacing: -0.5px;
+      font-size: 4.4rem;
+      line-height: 1.2;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
 
+    .price {
+      font-variant-numeric: lining-nums proportional-nums;
+      line-height: 120%;
+      font-size: 2rem;
+    }
 
+    figure {
+      color: #fff;
+    }
 
-    <div class="container grid grid--4-cols margin-bottom-md">
-      <div class="best-products">
-        <a href="Products/vaazhainaarsilk.html" target="_blank">
-          <img src="Testimonial-Images/1.jpg" class="best-products-img" alt="Vaalai Pattu Saree Image" />
-        </a>
-        <div class="best-products-content">
+    figure h3 + p {
+      font-size: 0.8125rem;
+    }
 
-          <p class="best-products-title">Vaalai Pattu Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>899</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
+    figure footer p.small {
+      font-weight: 400;
+      margin-bottom: 0;
+    }
 
-      <div class="best-products">
-        <a href="Products/bananapith.html" target="_blank">
-          <img src="Testimonial-Images/8.jpg" class="best-products-img" alt="Banana Pith Sarees" />
-        </a>
-        <div class="best-products-content">
-          <p class="best-products-title">Banana Pith Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>1399</strong></span>
-            </li>
+    .allproducts-images {
+      width: 100%;
+      /* height: 50%; */
+      display: block;
+      object-fit: cover;
+    }
 
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <a href="Products/cottonsilk.html" target="_blank"><img src="Testimonial-Images/5.jpg" class="best-products-img"
-            alt="Soft Cotton Sarees" />
-        </a>
-        <div class="best-products-content">
+    .gallery {
+      display: grid;
+      list-style-type: none;
+      padding: 10px;
+      margin: 10px;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      grid-auto-flow: dense;
+    }
 
-          <p class="best-products-title">Soft Cotton Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>599</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <a href="Products/tussersilk.html" target="_blank">
-          <img src="Testimonial-Images/7.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        </a>
-        <div class="best-products-content">
+    figure {
+      margin: 0;
+      width: 100%;
+      position: relative;
+      border-radius: 6px;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/7.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figcaption {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      padding: 4rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
+    figcaption main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
 
-        </div>
-        <!-- <div class="container box-text">
-                  <a href="products.html" class="link">Explore Tusser Collections &rarr;</a>
-                </div> -->
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/8.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figure p {
+      margin: 0;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/2.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figure footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/4.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figure footer img {
+      width: auto;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/1.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figure main,
+    figure footer {
+      opacity: 0;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="best-products">
-        <img src="Testimonial-Images/9.jpg" class="best-products-img" alt="Tusser Silk Sarees" />
-        <div class="best-products-content">
+    figure:hover main,
+    figure:hover footer {
+      opacity: 1;
+    }
 
-          <p class="best-products-title">Tusser Silk Sarees</p>
-          <ul class="best-products-attributes">
-            <li class="best-products-attribute">
-              <svg class="best-products-icon" fill="#000000" width="800px" height="800px" viewBox="-96 0 512 512"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M308 96c6.627 0 12-5.373 12-12V44c0-6.627-5.373-12-12-12H12C5.373 32 0 37.373 0 44v44.748c0 6.627 5.373 12 12 12h85.28c27.308 0 48.261 9.958 60.97 27.252H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h158.757c-6.217 36.086-32.961 58.632-74.757 58.632H12c-6.627 0-12 5.373-12 12v53.012c0 3.349 1.4 6.546 3.861 8.818l165.052 152.356a12.001 12.001 0 0 0 8.139 3.182h82.562c10.924 0 16.166-13.408 8.139-20.818L116.871 319.906c76.499-2.34 131.144-53.395 138.318-127.906H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-58.69c-3.486-11.541-8.28-22.246-14.252-32H308z" />
-              </svg>
-              <span>Starts at <strong>999</strong></span>
-            </li>
-          </ul>
-        </div>
-      </div>
+    figcaption {
+      z-index: 1;
+    }
 
+    figcaption::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(21, 22, 24, 0.24) 0%,
+        #151618 100%
+      );
+      z-index: -1;
+      opacity: 0;
+      transition-property: opacity;
+    }
 
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container grid grid--footer">
-      <div class="logo-col">
-        <a href="#" class="footer-logo">
-          <img
-            class="logo-footer"
-            alt="Omnifood logo"
-            src="Images/file.png"
-          />
-        </a>
-        <p class="copyright">
-          Copyright &copy; <span class="year">2024</span> by Nesavaruvi
-          Boutique. <br />All rights reserved.
-        </p>
-        <ul class="social-links">
+    figure a img {
+      /* transform: scale(1.2); */
+      transition-property: transform;
+    }
+
+    figure:hover figcaption::before {
+      opacity: 1;
+    }
+
+    figure:hover img {
+      transform: scale(1.2);
+      transition: all 0.7s ease;
+    }
+
+    figure {
+      overflow: hidden;
+    }
+
+    figure main {
+      transform: translate3d(0, -6rem, 0);
+      transition-property: opacity, transform;
+    }
+
+    figure footer {
+      transform: translate3d(0, 6rem, 0);
+      transition-property: opacity, transform;
+    }
+
+    figure:hover main,
+    figure:hover footer {
+      transform: translate3d(0, 0, 0);
+    }
+
+    figure footer img {
+      transform: translate3d(-6rem, 0, 0) rotate(360deg);
+      transition-delay: var(--def-transition-duration);
+      opacity: 0;
+    }
+
+    figure:hover footer img {
+      transform: translate3d(0, 0, 0) rotate(0);
+      opacity: 1;
+    }
+
+    figcaption::before,
+    figure a img,
+    figure main,
+    figure footer,
+    figure img {
+      transition-duration: var(--def-transition-duration);
+      animation-timing-function: ease-in-out;
+    }
+
+    .small {
+      font-size: 1.2rem;
+    }
+
+    .description-product {
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+  </style>
+
+  <body>
+    <!-- Nav Bar -->
+
+    <header class="header">
+      <a href=""><img src="Images/file.png" alt="" /></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
           <li>
-            <a class="footer-link" href="#"
-              ><ion-icon
-                class="social-icon"
-                name="logo-instagram"
-              ></ion-icon>
-              <p class="copyright">Instagram</p></a
-            >
+            <a class="main-nav-link" href="../index.html#aboutus">About</a>
           </li>
           <li>
-            <a class="footer-link" href="#"
-              ><ion-icon
-                class="social-icon"
-                name="logo-facebook"
-              ></ion-icon>
-              <p class="copyright">Facebook</p></a
-            >
+            <a class="main-nav-link" href="../index.html#contactus">Contact</a>
           </li>
           <li>
-            <a class="footer-link" href="#"
-              ><ion-icon
-                class="social-icon"
-                name="logo-whatsapp"
-              ></ion-icon>
-              <p class="copyright">Whatsapp</p></a
-            >
+            <a class="main-nav-link nav-libtn" href="products.html">Products</a>
           </li>
         </ul>
-      </div>
-      <div class="address-col">
-        <p class="footer-heading">Contact us</p>
-        <address class="contacts">
-          <p class="address">
-            Nesavaruvi Boutique,<br />
-            No.2 Suprabath Constructions, Manikandan St, New Perungalathur,
-            Chennai - 600063
-          </p>
-          <p>
-            <a class="footer-link" href="tel:1234567890">1234567890</a
-            ><br />
-            <a
-              class="footer-link"
-              href="mailto:nesavaruviboutique@gmail.com"
-              >nesavaruviboutique@gmail.com</a
-            >
-          </p>
-        </address>
-      </div>
-    </div>
-  </footer>
-  <script
-  type="module"
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-  nomodule
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
-<script src="../E-Commerce/JS/script.js"></script>
-</body>
+      </nav>
+    </header>
+    <section class="container">
+      <h1 class="center-text products-heading-secondary">Our Products</h1>
+      <ul class="gallery"></ul>
+    </section>
+    <br />
 
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo-footer"
+              alt="Omnifood logo"
+              src="Images/file.png"
+            />
+          </a>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2024</span> by Nesavaruvi
+            Boutique. <br />All rights reserved.
+          </p>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                <p class="copyright">Instagram</p>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                <p class="copyright">Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-whatsapp"></ion-icon>
+                <p class="copyright">Whatsapp</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Nesavaruvi Boutique,<br />
+              No.2 Suprabath Constructions, Manikandan St, New Perungalathur,
+              Chennai - 600063
+            </p>
+            <p>
+              <a class="footer-link" href="tel:1234567890">1234567890</a><br />
+              <a class="footer-link" href="mailto:nesavaruviboutique@gmail.com"
+                >nesavaruviboutique@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <script src="fetch.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../E-Commerce/JS/script.js"></script>
+  </body>
 </html>
