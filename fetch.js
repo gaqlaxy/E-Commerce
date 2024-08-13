@@ -14,9 +14,8 @@ fetch(jsonFile)
             mostPopProducts.innerHTML += `
         <li data-product-id="${id}">
           <figure>
-          <a href="https://wa.link/lasa0t" target=_blank>
             <img class="allproducts-images" src="${product.images}" alt="${name}"
-            /></a>
+            />
             <figcaption>
               <main>
                 <h3 class="category">${name} <em>Sarees</em></h3>
@@ -27,7 +26,8 @@ fetch(jsonFile)
                   <p class="small">From</p>
                   <p class="price">&#8377;${price}</p>
                 </div>
-                <img src="Images/arrow-icon.svg" alt="Icon" />
+                <a href="https://wa.link/lasa0t" target=_blank>
+                <img src="Images/arrow-icon.svg" alt="Icon" /></a>
               </footer>
             </figcaption>
           </figure>

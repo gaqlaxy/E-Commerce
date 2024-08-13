@@ -116,7 +116,7 @@ ul li a {
   color: #333;
   position: relative;
 }
-ul li a::before {
+.forhover ul li a::before {
   content: "";
   width: 0px;
   height: 5px;
@@ -126,7 +126,7 @@ ul li a::before {
   left: 0;
   transition: 0.5s;
 }
-ul li:hover a::before {
+.forhover ul li:hover a::before {
   width: 50%;
   transform: translateX(100%);
 }
