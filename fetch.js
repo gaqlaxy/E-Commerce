@@ -9,8 +9,8 @@ fetch(jsonFile)
     .then((data) => {
         console.log(data);
         data.map((product) => {
-            const { id, name, price, images } = product;
-            console.log(id, name, price, images);
+            const { id, name, price, images, links } = product;
+            console.log(id, name, price, images, links);
             mostPopProducts.innerHTML += `
         <li data-product-id="${id}">
           <figure>
@@ -26,7 +26,7 @@ fetch(jsonFile)
                   <p class="small">From</p>
                   <p class="price">&#8377;${price}</p>
                 </div>
-                <a href="https://wa.link/lasa0t" target=_blank>
+                <a href="${product.links}" target=_blank>
                 <img src="Images/arrow-icon.svg" alt="Icon" /></a>
               </footer>
             </figcaption>
