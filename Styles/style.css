@@ -73,7 +73,11 @@ body::-webkit-scrollbar-thumb {
 .grid--center-v {
   align-items: center;
 }
+.grid--4-cols-auto{
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+}
 /* Navigation  */
 
 .header {
