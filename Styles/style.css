@@ -1217,7 +1217,7 @@ button {
   min-width: 250px;
   padding: 1.5rem;
   border-radius: 16px;
-  background: #FFFDED;
+  background: #ffebdb;
   box-shadow: 0.5rem 0.5rem 0.5rem 1rem #53505059;
   /* box-shadow: -1rem 0 1rem #53505059; */
   display: flex;
