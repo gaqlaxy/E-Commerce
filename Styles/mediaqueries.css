@@ -24,8 +24,8 @@
   .section-cta{
   padding: 0;
   }
-  .cta {
-    grid-template-columns: 3fr 2fr;
+  .cta{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .cta-form {
     display: grid;
@@ -33,15 +33,9 @@
     column-gap: 3.2rem;
     row-gap: 2.4rem;
   }
-
-
-
-
-
-
-
-
-
+  .cta-text-box{
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
 
 
 }
@@ -77,4 +71,17 @@
   .hero-text{
     text-align: center;
   }
+}
+
+@media (max-width: 780px){
+  .cta-image-box {
+  height: 32rem;
+  grid-row: 1;
+}
+.cta-text-box{
+  grid-row: 2;
+}
+.ctacont{
+  max-width: 60rem;
+}
 }
