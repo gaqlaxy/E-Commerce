@@ -109,5 +109,10 @@ const swiper = new Swiper('.js-testimonials-slider', {
 
   // Mobile Nav 
 
-
+  let btnNav = document.querySelector(".btn-mobile-nav");
+  let headerNav = document.querySelector(".header");
+  
+  btnNav.addEventListener("click", function(){
+    headerNav.classList.toggle("nav-open");
+  })
   
