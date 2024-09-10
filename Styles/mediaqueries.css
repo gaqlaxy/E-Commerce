@@ -135,7 +135,9 @@
 
 @media (max-width: 500px) {
   .hero-container {
-    padding: 0;
+    padding: 1rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
   .section-products {
     padding: 4rem 0rem;
@@ -175,9 +177,9 @@
 
 @media (max-width: 400px) {
   .hero-container {
-    padding: 0;
+    padding: 1rem;
     margin: 0;
-    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .hero-heading {
     font-size: 3.2rem;
@@ -187,4 +189,11 @@
     font-size: 1.4rem;
     margin-bottom: 4.8rem;
   }
+  .imagehero {
+    /* justify-content: center; */
+    /* width: 70%; */
+    /* width: 500px; */
+    height: 292px;
+    max-width: 100%;
+}
 }
